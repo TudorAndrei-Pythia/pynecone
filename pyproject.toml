@@ -4,23 +4,16 @@ version = "0.1.31"
 description = "Web apps in pure Python."
 license = "Apache-2.0"
 authors = [
-    "Nikhil Rao <nikhil@pynecone.io>",
-    "Alek Petuskey <alek@pynecone.io>",
+  "Nikhil Rao <nikhil@pynecone.io>",
+  "Alek Petuskey <alek@pynecone.io>",
 ]
 readme = "README.md"
 homepage = "https://pynecone.io"
 repository = "https://github.com/pynecone-io/pynecone"
 documentation = "https://pynecone.io/docs/getting-started/introduction"
-keywords = [
-    "web",
-    "framework",
-]
-classifiers = [
-    "Development Status :: 4 - Beta",
-]
-packages = [
-    {include = "pynecone"}
-]
+keywords = ["web", "framework"]
+classifiers = ["Development Status :: 4 - Beta"]
+packages = [{ include = "pynecone" }]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -31,7 +24,7 @@ httpx = "^0.23.0"
 jinja2 = "^3.1.2"
 plotly = "^5.13.0"
 psutil = "^5.9.4"
-pydantic = "1.10.2"
+pydantic = "1.10.6"
 python-multipart = "^0.0.5"
 python-socketio = "^5.7.0"
 redis = "^4.3.5"
@@ -53,10 +46,10 @@ pytest-cov = "^4.0.0"
 black = "^22.10.0"
 ruff = "^0.0.244"
 pandas = [
-    {version = "^1.5.3", python = ">=3.8,<4.0"},
-    {version = "^1.1", python = ">=3.7, <3.8"}
+  { version = "^1.5.3", python = ">=3.8,<4.0" },
+  { version = "^1.1", python = ">=3.7, <3.8" },
 ]
-pre-commit = {version = "^3.2.1", python = ">=3.8,<4.0"}
+pre-commit = { version = "^3.2.1", python = ">=3.8,<4.0" }
 
 [tool.poetry.scripts]
 pc = "pynecone.pc:main"
@@ -71,7 +64,19 @@ build-backend = "poetry.core.masonry.api"
 
 select = ["B", "D", "E", "F", "I", "SIM", "W"]
 
-ignore = ["B008", "D203", "D205", "D213", "D401", "D406", "D407", "E501", "F403", "F405", "F541"]
+ignore = [
+  "B008",
+  "D203",
+  "D205",
+  "D213",
+  "D401",
+  "D406",
+  "D407",
+  "E501",
+  "F403",
+  "F405",
+  "F541",
+]
 
 target-version = "py37"
 
